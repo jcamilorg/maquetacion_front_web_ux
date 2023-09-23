@@ -1,0 +1,34 @@
+.circular-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  width: 18px; // Tamaño que desees para el botón
+  height: 18px;
+  border-radius: 50%; // Hace que sea circular
+  background-color: rgb(255, 255, 255); // Color por defecto
+  color: rgb(15, 0, 0); // Color de la letra por defecto
+  border: 1px solid rgb(231, 231, 231); // Borde por defecto
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; // Transición suave al cambiar de color
+
+  &.clicked {
+    background-color: rgb(11, 1, 25); // Color cuando se ha hecho clic
+    color : rgb(255, 255, 255);
+    // Cambia a cualquier otro color que prefieras
+  }
+}
+
+.circle-letter {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #5F630D;
+  /* Color azul de Bootstrap como ejemplo */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}

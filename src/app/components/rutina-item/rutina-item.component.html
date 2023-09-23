@@ -1,0 +1,51 @@
+<div class="card my-3">
+  <!-- Primera Parte: Letra Circular y Título -->
+  <div class="section d-flex align-items-center justify-content-center p-3">
+    <div class="circle-letter text-white me-3">
+      A <!-- Aquí va la letra -->
+    </div>
+    <h6 class="mt-2">Rutina 1. Estudiar para el parcial de Calculo</h6>
+  </div>
+
+  <!-- Segunda Parte: Hora de inicio -->
+  <div class="section p-3">
+    <p><b>Hora de Inicio:</b>
+      08:00 a.m</p> <!-- Hora de inicio -->
+  </div>
+
+  <!-- Tercera Parte: Hora de fin -->
+  <div class="section p-3">
+    <p><b>Hora de FIn:</b>
+      10:00 a.m</p> <!-- Hora de fin -->
+  </div>
+
+  <!-- Cuarta Parte: Descripción -->
+  <div class="section p-3">
+    <p>Descripción breve de la actividad</p>
+  </div>
+
+  <!-- Quinta Parte: Días de la semana -->
+  <div class="section d-flex justify-content-around p-3">
+    <button class="circular-button" [class.clicked]="lunes" (click)="togglelunes()">
+      L
+    </button>
+    <button class="circular-button" [class.clicked]="martes" (click)="togglemartes()">
+      M
+    </button>
+    <button class="circular-button" [class.clicked]="miercoles" (click)="togglemiercoles()">
+      Mi
+    </button>
+    <button class="circular-button" [class.clicked]="jueves" (click)="togglejueves()">
+      J
+    </button>
+    <button class="circular-button" [class.clicked]="viernes" (click)="toggleviernes()">
+      V
+    </button>
+    <button class="circular-button" [class.clicked]="sabado" (click)="togglesabado()">
+      S
+    </button> <!-- Botones de días de la semana -->
+    <button class="circular-button" [class.clicked]="domingo" (click)="toggledomingo()">
+      D
+    </button> <!-- Botones de días de la semana -->
+  </div>
+</div>

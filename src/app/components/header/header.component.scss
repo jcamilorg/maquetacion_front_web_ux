@@ -1,0 +1,30 @@
+
+  /* Estilo personalizado para las líneas diagonales */
+  .navbar-custom {
+    position: relative;
+    background-color: #d6f491;
+  }
+
+.navbar-custom:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    transform: skewX(-45deg);
+    transform-origin: top left;
+  }
+
+.navbar-custom:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 52%;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    transform: skewX(-45deg);
+    transform-origin: bottom left;
+  }

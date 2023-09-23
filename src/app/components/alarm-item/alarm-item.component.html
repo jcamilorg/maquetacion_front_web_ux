@@ -1,0 +1,48 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-body d-flex">
+      <!-- Primera Parte: Círculo con Letra -->
+      <div class="mr-3 pe-4">
+        <div class="circle-letter ">
+          A <!-- Letra de la Alarma -->
+        </div>
+      </div>
+
+      <!-- Segunda Parte: Título, Hora, Toggle y Botones del día -->
+      <div class="flex-grow-1">
+        <h6 class="card-title">Título de la Alarma</h6>
+        <h6 class="card-text"><i class="far fa-clock"></i> 7:30 AM</h6>
+        <div class="d-flex"> <!-- Botones y activacion -->
+          <div>
+            <button class="circular-button" [class.clicked]="lunes" (click)="togglelunes()">
+              L
+            </button>
+            <button class="circular-button" [class.clicked]="martes" (click)="togglemartes()">
+              M
+            </button>
+            <button class="circular-button" [class.clicked]="miercoles" (click)="togglemiercoles()">
+              Mi
+            </button>
+            <button class="circular-button" [class.clicked]="jueves" (click)="togglejueves()">
+              J
+            </button>
+            <button class="circular-button" [class.clicked]="viernes" (click)="toggleviernes()">
+              V
+            </button>
+            <button class="circular-button" [class.clicked]="sabado" (click)="togglesabado()">
+              S
+            </button> <!-- Botones de días de la semana -->
+            <button class="circular-button" [class.clicked]="domingo" (click)="toggledomingo()">
+              D
+            </button> <!-- Botones de días de la semana -->
+          </div>
+          <mat-slide-toggle class="ps-2"></mat-slide-toggle>
+        </div>
+      </div>
+      <!-- Tercera Parte: Otra Foto -->
+      <div>
+        <img src="assets/music.png" alt="Otra Foto" width="80">
+      </div>
+    </div>
+  </div>
+</div>
