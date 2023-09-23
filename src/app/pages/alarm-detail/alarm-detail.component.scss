@@ -1,0 +1,10 @@
+.styled-checkbox {
+  transform: scale(1.5);  /* Aumenta el tamaño del checkbox */
+  margin-right: 10px;  /* Espacio entre el checkbox y el texto */
+}
+
+/* Cambia el color del checkbox cuando esté marcado/checked */
+.styled-checkbox:checked {
+  background-color: #f3d721 !important; /* o cualquier color que prefieras */
+  border-color: #f3e521a3 !important; /* o cualquier color que prefieras */
+}

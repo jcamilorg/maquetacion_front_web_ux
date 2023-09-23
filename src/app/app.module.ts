@@ -12,6 +12,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { RutinaItemComponent } from './components/rutina-item/rutina-item.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { TimepickerComponent } from './components/timepicker/timepicker.component';
+
+import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 
 @NgModule({
   declarations: [
@@ -22,6 +27,7 @@ import { RutinaItemComponent } from './components/rutina-item/rutina-item.compon
     HeaderComponent,
     FooterComponent,
     RutinaItemComponent,
+    TimepickerComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +35,9 @@ import { RutinaItemComponent } from './components/rutina-item/rutina-item.compon
     BrowserAnimationsModule,
     MatSlideToggleModule,
     MatButtonToggleModule,
+    MatFormFieldModule,
+    MatInputModule,
+    NgxMaterialTimepickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -41,3 +41,32 @@ $color-secundario: #c6d1fb;
   background-color: lighten($color-secundario, 11%);
 }
 
+// cambir colores del timepicker
+.timepicker__header {
+  background-color: $color-principal !important;
+
+}
+.timepicker-dial__item{
+  color: #575555 !important;
+}
+.timepicker-dial__item_active {
+  color: #000 !important;
+}
+.clock-face__number >  span.active{
+  background-color: #fff !important;
+  color:#000 !important;
+}
+.timepicker-button{
+ color: darken($color-principal, 35%) !important;
+}
+
+.timepicker-dial__time{
+  color: #000000 !important;
+}
+
+.ngx-timepicker-clock__item {
+  color: #000 !important;
+}
+.ngx-timepicker-clock__hand {
+  background-color: #000 !important;
+}
