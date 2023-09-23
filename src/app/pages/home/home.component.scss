@@ -18,5 +18,24 @@
   }
 }
 
+.custom-btn-2 {
+  background-color: $color-secundario;
+  color: black;
+  border-radius: 25px; // Ajusta este valor según lo "redondeado" que quieras que sea
+  border: none;
+
+  // Estilizando el ícono de "más"
+  .fa-plus {
+    margin-right: 5px; // Espaciado entre el ícono y el texto
+  }
+
+  // Estilos para cuando se pasa el ratón sobre el botón
+  &:hover {
+    background-color: darken($color-secundario, 10%); // Oscurece un poco el amarillo
+    text-decoration: none; // Remueve cualquier subrayado
+  }
+}
+
+
 
 

@@ -30,3 +30,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 $color-principal: #d6f491;
+$color-secundario: #c6d1fb;
+
+
+.bg-p-ligth {
+  background-color: lighten($color-principal, 20%);
+
+}
+.bg-s-ligth {
+  background-color: lighten($color-secundario, 11%);
+}
+
