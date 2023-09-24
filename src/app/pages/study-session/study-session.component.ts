@@ -14,6 +14,10 @@ export class StudySessionComponent {
   sabado: boolean = false;
   domingo: boolean = false;
 
+  sesion() {
+    alert('¡Se ha iniciado la sesión de estudio!');
+  }
+
   togglelunes() {
     this.lunes = !this.lunes;
   }

@@ -13,6 +13,15 @@ export class RutinaDetailComponent {
   viernes: boolean = false;
   sabado: boolean = false;
   domingo: boolean = false;
+  crear() {
+    alert('¡Se ha creado la rutina correctamente!');
+  }
+  subirAudio() {
+    alert('¡Sube o arrasta tu audio!');
+  }
+  graba() {
+    alert('graba tu nota de voz!');
+  }
 
   togglelunes() {
     this.lunes = !this.lunes;

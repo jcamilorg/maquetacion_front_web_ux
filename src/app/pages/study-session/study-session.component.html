@@ -5,82 +5,24 @@
       <a routerLink="/home"><button class="btn custom-btn mt-4">
           <i class="fa-solid fa-arrow-left"></i> Salir
         </button></a>
-
-      <div class="pb-3">
-        <h5 class="pt-3">Nombre de la Alarma</h5>
-        <input type="text" class="form-control" placeholder="Nombre de la Alarma">
-      </div>
-      <h5>Selecciona la Hora de inicio:</h5>
+      <h5 class="mt-4">Hora de Finalización de la Sesion </h5>
       <app-timepicker />
     </div>
     <div class="col-md-8 mt-4">
-
-      <div class="d-flex align-items-center">
-        <div class="pe-4">Repetir alarma </div>
-        <mat-slide-toggle class="ps-2"></mat-slide-toggle>
+      <h5>Tiempo para Finalizar la Sesión</h5>
+      <div class="fs-3 pb-3 fw-semibold">
+        <span class=" bg-white rounded-2 border border-1 border-secondary-subtle px-2">01</span>
+        :
+        <span class=" bg-white rounded-2 border border-1 border-secondary-subtle px-2">31</span>
+        :
+        <span class=" bg-p-ligth rounded-2 border border-1 border-secondary-subtle px-2">10</span>
       </div>
-      <h5 class="pt-3">Dias a Repetir</h5>
-      <div class="d-flex"> <!-- Botones y activacion -->
-        <div>
-          <button class="circular-button" [class.clicked]="lunes" (click)="togglelunes()">
-            L
-          </button>
-          <button class="circular-button" [class.clicked]="martes" (click)="togglemartes()">
-            M
-          </button>
-          <button class="circular-button" [class.clicked]="miercoles" (click)="togglemiercoles()">
-            Mi
-          </button>
-          <button class="circular-button" [class.clicked]="jueves" (click)="togglejueves()">
-            J
-          </button>
-          <button class="circular-button" [class.clicked]="viernes" (click)="toggleviernes()">
-            V
-          </button>
-          <button class="circular-button" [class.clicked]="sabado" (click)="togglesabado()">
-            S
-          </button> <!-- Botones de días de la semana -->
-          <button class="circular-button" [class.clicked]="domingo" (click)="toggledomingo()">
-            D
-          </button> <!-- Botones de días de la semana -->
-        </div>
-      </div>
+      <textarea rows="8" class="w-100 bg-s-ligth p-3 rounded-3" placeholder="Notas..."></textarea>
 
-      <div class="row pt-4">
-        <div class="col-md-6">
-          <h5 class="pt-3">Tono Personalizado/ Nota voz <mat-slide-toggle class="ps-2"></mat-slide-toggle></h5>
-          <button class="btn custom-btn w-100 mt-4">
-            <i class="fa-solid fa-arrow-up-from-bracket pe-2"></i> Subir tono de voz personalizado
-          </button>
-          <button class="btn custom-btn w-100 mt-4">
-            <i class="fas fa-plus pe-2"></i> Grabar nota de Voz para Alarma
-          </button>
-
-          <div class="align-items-center d-flex bg-p-ligth border-1 border px-2 py-3 mt-4 rounded-3">
-            <i class="fa-regular fa-file-audio fa-3x"></i>
-            <div class="ps-4">
-              <h6 class="d-inline">Archivo</h6>
-              <div>Archivo subido o Nota de Voz</div>
-
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-6">
-          <h5 class="pt-3">Asociar Tono Por Defecto <mat-slide-toggle class="ps-2"></mat-slide-toggle></h5>
-          <select class="form-select" size="4">
-            <option selected>Seleccionar Sonido </option>
-            <option value="1">Sonido 1</option>
-            <option value="2">Sonido 2</option>
-            <option value="3">Sonido 3</option>
-          </select>
-        </div>
-      </div>
     </div>
 
-    <button class="btn custom-btn mt-4 w-100">
-      <i class="fas fa-plus pe-2"></i> Crear Alarma
+    <button class="btn custom-btn my-4 w-100" (click)="sesion()">
+      <i class="fa-solid fa-play"></i> Iniciar Sesión de Estudio
     </button>
 
   </div>

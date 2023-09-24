@@ -49,10 +49,10 @@
       <div class="row pt-4">
         <div class="col-md-6">
           <h5 class="pt-3">Tono Personalizado/ Nota voz <mat-slide-toggle class="ps-2"></mat-slide-toggle></h5>
-          <button class="btn custom-btn w-100 mt-4">
+          <button class="btn custom-btn w-100 mt-4" (click)="subirAudio()">
             <i class="fa-solid fa-arrow-up-from-bracket pe-2"></i> Subir tono de voz personalizado
           </button>
-          <button class="btn custom-btn w-100 mt-4">
+          <button class="btn custom-btn w-100 mt-4" (click)="graba()">
             <i class="fas fa-plus pe-2"></i> Grabar nota de Voz para Alarma
           </button>
 
@@ -79,7 +79,7 @@
       </div>
     </div>
 
-    <button class="btn custom-btn mt-4 w-100">
+    <button class="btn custom-btn mt-4 w-100" (click)="crear()">
       <i class="fas fa-plus pe-2"></i> Crear Alarma
     </button>
 
