@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-alarm-detail',
-  templateUrl: './alarm-detail.component.html',
-  styleUrls: ['./alarm-detail.component.scss'],
+  selector: 'app-study-session',
+  templateUrl: './study-session.component.html',
+  styleUrls: ['./study-session.component.scss'],
 })
-export class AlarmDetailComponent {
+export class StudySessionComponent {
   lunes: boolean = false;
   martes: boolean = false;
   miercoles: boolean = false;

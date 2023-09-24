@@ -17,6 +17,8 @@ import { MatInputModule } from '@angular/material/input';
 import { TimepickerComponent } from './components/timepicker/timepicker.component';
 
 import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
+import { RutinaDetailComponent } from './pages/rutina-detail/rutina-detail.component';
+import { StudySessionComponent } from './pages/study-session/study-session.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
     FooterComponent,
     RutinaItemComponent,
     TimepickerComponent,
+    RutinaDetailComponent,
+    StudySessionComponent,
   ],
   imports: [
     BrowserModule,

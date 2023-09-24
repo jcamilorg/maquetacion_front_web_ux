@@ -1,5 +1,5 @@
 <div class="container rounded-4 shadow-lg bg-light pt-4 mt-3 py-2">
-  <h1 class="fs-3 text-center">Crear Nueva Alarma</h1>
+  <h1 class="fs-3 text-center">Crear Nueva Rutina</h1>
   <div class="row mx-5 justify-content-center">
     <div class="col-md-4">
       <a routerLink="/home"><button class="btn custom-btn mt-4">
@@ -7,16 +7,18 @@
         </button></a>
 
       <div class="pb-3">
-        <h5 class="pt-3">Nombre de la Alarma</h5>
-        <input type="text" class="form-control" placeholder="Nombre de la Alarma">
+        <h5 class="pt-3">Nombre de la Rutina</h5>
+        <input type="text" class="form-control" placeholder="Nombre de la Rutina">
       </div>
-      <h5>Selecciona la Hora de inicio:</h5>
+      <h5 class="mt-2">Selecciona la Hora de inicio:</h5>
+      <app-timepicker />
+      <h5 class="mt-4">Selecciona la Hora de fin:</h5>
       <app-timepicker />
     </div>
     <div class="col-md-8 mt-4">
 
       <div class="d-flex align-items-center">
-        <div class="pe-4">Repetir alarma </div>
+        <div class="pe-4">Repetir Rutina </div>
         <mat-slide-toggle class="ps-2"></mat-slide-toggle>
       </div>
       <h5 class="pt-3">Dias a Repetir</h5>
@@ -53,7 +55,7 @@
             <i class="fa-solid fa-arrow-up-from-bracket pe-2"></i> Subir tono de voz personalizado
           </button>
           <button class="btn custom-btn w-100 mt-4">
-            <i class="fas fa-plus pe-2"></i> Grabar nota de Voz para Alarma
+            <i class="fas fa-plus pe-2"></i> Grabar nota de Voz para Rutina
           </button>
 
           <div class="align-items-center d-flex bg-p-ligth border-1 border px-2 py-3 mt-4 rounded-3">
@@ -80,7 +82,7 @@
     </div>
 
     <button class="btn custom-btn mt-4 w-100">
-      <i class="fas fa-plus pe-2"></i> Crear Alarma
+      <i class="fas fa-plus pe-2"></i> Crear Rutina
     </button>
 
   </div>
